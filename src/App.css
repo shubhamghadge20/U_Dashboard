@@ -1,0 +1,52 @@
+.sidebar {
+  transition: width 0.3s ease-in-out;
+}
+
+.sidebar-expanded {
+  width: 250px;
+}
+
+.sidebar-collapsed {
+  width: 80px;
+}
+
+.sidebar .sidebar-link {
+  display: flex;
+  align-items: center;
+  padding: 10px 20px;
+  color: #555;
+  font-size: 16px;
+  transition: background-color 0.3s;
+}
+
+.sidebar .sidebar-link:hover {
+  background-color: #007bff;
+  color: white;
+}
+
+.sidebar .sidebar-link svg {
+  margin-right: 10px;
+  font-size: 18px;
+}
+
+.sidebar .sidebar-toggle {
+  margin-top: 20px;
+  cursor: pointer;
+  color: #007bff;
+  text-align: center;
+  font-size: 16px;
+}
+
+@media (max-width: 768px) {
+  .sidebar-expanded {
+    width: 100%;
+  }
+
+  .sidebar-collapsed {
+    width: 0;
+  }
+
+  .sidebar .sidebar-toggle {
+    display: none;
+  }
+}
